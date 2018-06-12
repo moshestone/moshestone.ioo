@@ -1,0 +1,38 @@
+* { box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+.column1, .column2, .column3 {
+  float: left;
+  padding: 10px;
+}
+
+.column1{
+  background-color: white;
+  width: 30%;
+  margin-left: 5%;
+}
+
+.column2{
+  background-color:white;
+  width: 30%;
+}
+.column3 {
+  background-color: white;
+  width: 30%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  .column1, .column2 {
+    width: 100%;
+  }
+}
